@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #333;
+}
+header {
+  background: #0077b6;
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+  margin: 2em auto;
+  max-width: 900px;
+  padding: 0 1em;
+}
+.item-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 1em;
+  text-align: center;
+  transition: transform .2s;
+  cursor: pointer;
+}
+.item-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.item-card img {
+  width: 100%;
+  max-width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: .5em;
+}
+.price {
+  color: #0077b6;
+  font-weight: bold;
+  margin: .5em 0;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background: white;
+  margin: 5% auto;
+  padding: 2em;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+.close-button {
+  position: absolute;
+  top: 10px; right: 20px;
+  font-size: 2em;
+  color: #0077b6;
+  cursor: pointer;
+}
+.modal-img {
+  width: 90%;
+  max-width: 250px;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+#whatsapp-btn {
+  background: #25d366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8em 2em;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background .2s;
+}
+#whatsapp-btn:hover {
+  background: #1ebe57;
+}
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #ededed;
+  margin-top: 2em;
+}

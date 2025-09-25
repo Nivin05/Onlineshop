@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Portfolio Shop</h1>
+    <p>Browse and order directly from WhatsApp!</p>
+  </header>
+  <main>
+    <div id="items-container" class="grid"></div>
+  </main>
+
+  <!-- Modal for item details -->
+  <div id="item-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" id="close-modal">&times;</span>
+      <img id="modal-img" src="" alt="" class="modal-img">
+      <h2 id="modal-title"></h2>
+      <p id="modal-price"></p>
+      <button id="whatsapp-btn">Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio Shop</p>
+  </footer>
+  <script src="items.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
